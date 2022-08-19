@@ -18,7 +18,13 @@ class Webservice {
         completion(nil)
       } else if let data = data {
         
-        print(data)
+        let articleList = try? JSONDecoder().decode(ArticleList.self, from: data)
+        
+        if let articleList = articleList {
+          completion(articleList.articles)
+        }
+        
+        print(articleList?.articles)
       }
       // if you don't call resume(), it is never going to work
     }.resume()
