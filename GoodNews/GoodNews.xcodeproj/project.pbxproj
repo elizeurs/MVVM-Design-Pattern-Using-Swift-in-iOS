@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7595F54428AFDE630052F7E3 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595F54328AFDE630052F7E3 /* Article.swift */; };
+		7595F54A28B048D60052F7E3 /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7595F54928B048D60052F7E3 /* ArticleViewModel.swift */; };
 		75ADDD0828AEC62A005953A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADDD0728AEC62A005953A8 /* AppDelegate.swift */; };
 		75ADDD0A28AEC62A005953A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ADDD0928AEC62A005953A8 /* SceneDelegate.swift */; };
 		75ADDD0F28AEC62A005953A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75ADDD0D28AEC62A005953A8 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		7595F54328AFDE630052F7E3 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		7595F54928B048D60052F7E3 /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
 		75ADDD0428AEC62A005953A8 /* GoodNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75ADDD0728AEC62A005953A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75ADDD0928AEC62A005953A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		7595F54828B048B30052F7E3 /* View  Models */ = {
+			isa = PBXGroup;
+			children = (
+				7595F54928B048D60052F7E3 /* ArticleViewModel.swift */,
+			);
+			path = "View  Models";
+			sourceTree = "<group>";
+		};
 		75ADDCFB28AEC62A005953A8 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +78,7 @@
 		75ADDD0628AEC62A005953A8 /* GoodNews */ = {
 			isa = PBXGroup;
 			children = (
+				7595F54828B048B30052F7E3 /* View  Models */,
 				7595F54228AFDE490052F7E3 /* Models */,
 				75ADDD2028AEFFCD005953A8 /* Services */,
 				75ADDD1B28AEC778005953A8 /* Controllers */,
@@ -171,6 +182,7 @@
 				75ADDD0828AEC62A005953A8 /* AppDelegate.swift in Sources */,
 				75ADDD1F28AEC7CE005953A8 /* NewsListTableViewController.swift in Sources */,
 				75ADDD2228AEFFE9005953A8 /* Webservice.swift in Sources */,
+				7595F54A28B048D60052F7E3 /* ArticleViewModel.swift in Sources */,
 				75ADDD0A28AEC62A005953A8 /* SceneDelegate.swift in Sources */,
 				7595F54428AFDE630052F7E3 /* Article.swift in Sources */,
 			);
