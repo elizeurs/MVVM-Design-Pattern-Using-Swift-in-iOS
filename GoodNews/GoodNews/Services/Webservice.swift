@@ -9,7 +9,7 @@ import Foundation
 
 class Webservice {
   
-  func getArticles(url: URL, completion: @escaping ([Any]?) -> ()) {
+  func getArticles(url: URL, completion: @escaping ([Article]?) -> ()) {
     
     URLSession.shared.dataTask(with: url) { data, response, error in
       
