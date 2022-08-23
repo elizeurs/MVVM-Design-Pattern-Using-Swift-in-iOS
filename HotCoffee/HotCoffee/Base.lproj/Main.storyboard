@@ -85,14 +85,6 @@
                                     <outlet property="delegate" destination="XMu-Lf-St7" id="Yb2-Xp-OYb"/>
                                 </connections>
                             </tableView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gxV-qK-u09">
-                                <rect key="frame" x="104" y="523" width="206" height="66"/>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                            </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yej-4h-fy6">
                                 <rect key="frame" x="107" y="649" width="200" height="34"/>
                                 <constraints>
@@ -117,14 +109,11 @@
                         <constraints>
                             <constraint firstItem="yej-4h-fy6" firstAttribute="centerX" secondItem="zeT-JI-tB6" secondAttribute="centerX" id="5Ih-B6-ZKW"/>
                             <constraint firstItem="PLF-Rf-37l" firstAttribute="bottom" secondItem="9II-Df-2vM" secondAttribute="bottom" constant="108" id="Cvk-Ko-VXp"/>
-                            <constraint firstItem="gxV-qK-u09" firstAttribute="centerX" secondItem="zeT-JI-tB6" secondAttribute="centerX" id="Gd0-yY-6EM"/>
                             <constraint firstItem="wiI-2x-8PR" firstAttribute="top" secondItem="PLF-Rf-37l" secondAttribute="top" id="ISf-bB-ThS"/>
                             <constraint firstItem="PLF-Rf-37l" firstAttribute="bottom" secondItem="wiI-2x-8PR" secondAttribute="bottom" multiplier="16:9" id="KYL-JC-D4n"/>
                             <constraint firstItem="9II-Df-2vM" firstAttribute="centerX" secondItem="zeT-JI-tB6" secondAttribute="centerX" id="Lkn-u3-Tmb"/>
-                            <constraint firstItem="yej-4h-fy6" firstAttribute="top" secondItem="gxV-qK-u09" secondAttribute="bottom" constant="61" id="QQf-1W-K1m"/>
                             <constraint firstItem="wiI-2x-8PR" firstAttribute="leading" secondItem="PLF-Rf-37l" secondAttribute="leading" id="Ry2-hS-toE"/>
                             <constraint firstItem="PLF-Rf-37l" firstAttribute="trailing" secondItem="wiI-2x-8PR" secondAttribute="trailing" id="Yjq-wJ-eNk"/>
-                            <constraint firstItem="gxV-qK-u09" firstAttribute="top" secondItem="wiI-2x-8PR" secondAttribute="bottom" constant="49.5" id="oHv-Gq-CVb"/>
                             <constraint firstItem="9II-Df-2vM" firstAttribute="top" secondItem="yej-4h-fy6" secondAttribute="bottom" constant="17" id="rBp-fq-aI0"/>
                         </constraints>
                     </view>
