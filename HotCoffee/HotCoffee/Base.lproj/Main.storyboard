@@ -50,7 +50,7 @@
                     <navigationItem key="navigationItem" title="Orders" id="tIj-VK-Zm1">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wpb-qp-R0U">
                             <connections>
-                                <segue destination="AJ7-0d-JsC" kind="presentation" id="FPj-J5-YNs"/>
+                                <segue destination="AJ7-0d-JsC" kind="show" id="oX5-1K-16Z"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -64,11 +64,11 @@
             <objects>
                 <viewController id="XMu-Lf-St7" customClass="AddOrderViewController" customModule="HotCoffee" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zeT-JI-tB6">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="wiI-2x-8PR">
-                                <rect key="frame" x="0.0" y="56" width="414" height="417.5"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="397"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CoffeeTypeTableViewCell" id="qfd-k8-OOC">
@@ -86,7 +86,7 @@
                                 </connections>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yej-4h-fy6">
-                                <rect key="frame" x="107" y="649" width="200" height="34"/>
+                                <rect key="frame" x="107" y="669" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="1Mx-ds-RQi"/>
                                     <constraint firstAttribute="width" constant="200" id="Sc5-r3-BQK"/>
@@ -95,7 +95,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9II-Df-2vM">
-                                <rect key="frame" x="107" y="700" width="200" height="34"/>
+                                <rect key="frame" x="107" y="720" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="60b-jA-h9t"/>
                                     <constraint firstAttribute="height" constant="34" id="yBE-BM-w2P"/>
@@ -118,7 +118,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add New Order" id="UL4-3p-MEl">
-                        <barButtonItem key="leftBarButtonItem" title="Close" id="h1t-hQ-Zq9"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="h1t-hQ-Zq9">
+                            <connections>
+                                <action selector="close" destination="XMu-Lf-St7" id="Mn6-jI-zRC"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="K5b-wv-Iok">
                             <connections>
                                 <action selector="save" destination="XMu-Lf-St7" id="asb-uG-XFx"/>
@@ -158,8 +162,9 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AJ7-0d-JsC" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="g7e-yx-sLM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="KZp-m6-xYH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
