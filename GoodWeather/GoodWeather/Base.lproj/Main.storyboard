@@ -75,14 +75,48 @@
                     <view key="view" contentMode="scaleToFill" id="ly3-jl-agm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="2jK-BK-az7">
+                                <rect key="frame" x="20" y="96" width="374" height="105"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ddv-a0-lJ2">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OwA-6d-PGn">
+                                        <rect key="frame" x="0.0" y="74" width="374" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Save"/>
+                                        <connections>
+                                            <action selector="saveCityButtonPressed" destination="VBu-Gp-sZU" eventType="touchUpInside" id="Kxc-KY-U3y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="SqZ-XN-Ata"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2jK-BK-az7" firstAttribute="top" secondItem="SqZ-XN-Ata" secondAttribute="top" constant="40" id="HAe-cD-Xat"/>
+                            <constraint firstItem="2jK-BK-az7" firstAttribute="leading" secondItem="SqZ-XN-Ata" secondAttribute="leading" constant="20" id="YCw-83-OZL"/>
+                            <constraint firstItem="SqZ-XN-Ata" firstAttribute="trailing" secondItem="2jK-BK-az7" secondAttribute="trailing" constant="20" id="ZVr-wq-FFk"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add City" id="WUj-nY-LaG" customClass="Add"/>
+                    <navigationItem key="navigationItem" title="Add City" id="WUj-nY-LaG" customClass="Add">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="LHU-Yy-kQE">
+                            <connections>
+                                <action selector="close" destination="VBu-Gp-sZU" id="Osd-ei-ylI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cityNameTextField" destination="Ddv-a0-lJ2" id="P5f-An-st6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOn-KI-ZXA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2731.8840579710145" y="91.741071428571431"/>
+            <point key="canvasLocation" x="2730.434782608696" y="91.741071428571431"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AKv-PB-ayM">
