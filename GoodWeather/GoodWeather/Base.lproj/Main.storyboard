@@ -8,6 +8,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Settings-->
+        <scene sceneID="OKf-3l-Q6r">
+            <objects>
+                <tableViewController id="65I-g0-9Or" customClass="SettingsTableViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="z3a-wK-pez">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="xh9-rz-HDS">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xh9-rz-HDS" id="PaV-H6-hiF">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="65I-g0-9Or" id="WWn-dN-04p"/>
+                            <outlet property="delegate" destination="65I-g0-9Or" id="UnU-Av-b83"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="oa3-SL-yfh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="lGD-PE-aU7"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RCc-TA-qP0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972.4637681159422" y="-605.35714285714278"/>
+        </scene>
         <!--GoodWeather-->
         <scene sceneID="5pL-9Q-LNB">
             <objects>
@@ -56,7 +87,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="GoodWeather" id="Xcn-vg-bXK">
-                        <barButtonItem key="leftBarButtonItem" title="Settings" id="RQI-Zd-l82"/>
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="RQI-Zd-l82">
+                            <connections>
+                                <segue destination="wAa-Cm-hqb" kind="presentation" id="5ad-sz-Bk3"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gXP-WC-77P">
                             <connections>
                                 <segue destination="v7E-OC-DXs" kind="presentation" identifier="AddWeatherCityViewController" id="cHb-s5-mhC"/>
@@ -153,6 +188,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hr-1W-SaP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1821.7391304347827" y="91.741071428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="04H-5Y-xJ9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wAa-Cm-hqb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fat-j5-4AO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="65I-g0-9Or" kind="relationship" relationship="rootViewController" id="4yJ-Vd-ESP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7p-kt-sjV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062.3188405797102" y="-605.35714285714278"/>
         </scene>
     </scenes>
     <resources>
