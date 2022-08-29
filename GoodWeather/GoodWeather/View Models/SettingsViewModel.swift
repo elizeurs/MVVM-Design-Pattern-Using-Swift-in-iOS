@@ -22,7 +22,6 @@ extension Unit {
         return "Celsius"
       case .fahrenheit:
         return "Fahrenheit"
-        
       }
     }
   }
