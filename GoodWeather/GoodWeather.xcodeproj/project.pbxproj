@@ -19,6 +19,7 @@
 		7573BE6F28BBDBDC001517A8 /* AddWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7573BE6E28BBDBDC001517A8 /* AddWeatherViewModel.swift */; };
 		7573BE7228BBDC99001517A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7573BE7128BBDC99001517A8 /* Constants.swift */; };
 		7573BE7528BBDE24001517A8 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7573BE7428BBDE24001517A8 /* String+Extensions.swift */; };
+		7573BE7728BC15CE001517A8 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7573BE7628BC15CE001517A8 /* WeatherListViewModel.swift */; };
 		75B9AD8328BAB2DD00CF9EF0 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9AD8228BAB2DD00CF9EF0 /* WeatherResponse.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		7573BE6E28BBDBDC001517A8 /* AddWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherViewModel.swift; sourceTree = "<group>"; };
 		7573BE7128BBDC99001517A8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		7573BE7428BBDE24001517A8 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		7573BE7628BC15CE001517A8 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		75B9AD8228BAB2DD00CF9EF0 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				7573BE6E28BBDBDC001517A8 /* AddWeatherViewModel.swift */,
+				7573BE7628BC15CE001517A8 /* WeatherListViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				75190F2A28B7CB6100EA5708 /* AppDelegate.swift in Sources */,
 				7564A45D28B965E600AA97D8 /* Webservice.swift in Sources */,
 				75B9AD8328BAB2DD00CF9EF0 /* WeatherResponse.swift in Sources */,
+				7573BE7728BC15CE001517A8 /* WeatherListViewModel.swift in Sources */,
 				75190F4428B8138800EA5708 /* WeatherCell.swift in Sources */,
 				75190F4128B7D49000EA5708 /* AddWeatherCityViewController.swift in Sources */,
 				75190F2C28B7CB6100EA5708 /* SceneDelegate.swift in Sources */,

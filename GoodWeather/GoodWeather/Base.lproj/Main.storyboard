@@ -59,7 +59,7 @@
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="RQI-Zd-l82"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="gXP-WC-77P">
                             <connections>
-                                <segue destination="v7E-OC-DXs" kind="presentation" id="cHb-s5-mhC"/>
+                                <segue destination="v7E-OC-DXs" kind="presentation" identifier="AddWeatherCityViewController" id="cHb-s5-mhC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
