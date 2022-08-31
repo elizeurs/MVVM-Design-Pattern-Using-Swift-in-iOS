@@ -13,6 +13,8 @@
 		75CBDAD228C005D500300831 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CBDAD128C005D500300831 /* Preview Assets.xcassets */; };
 		75CBDADA28C006CD00300831 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBDAD928C006CD00300831 /* Webservice.swift */; };
 		75CBDADD28C0090D00300831 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBDADC28C0090D00300831 /* Stock.swift */; };
+		75CBDAE028C0129500300831 /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBDADF28C0129500300831 /* StockListViewModel.swift */; };
+		75CBDAE228C012AD00300831 /* StockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBDAE128C012AD00300831 /* StockViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		75CBDAD128C005D500300831 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		75CBDAD928C006CD00300831 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		75CBDADC28C0090D00300831 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		75CBDADF28C0129500300831 /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
+		75CBDAE128C012AD00300831 /* StockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		75CBDAC928C005D200300831 /* StocksAppSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				75CBDADE28C0126700300831 /* ViewModels */,
 				75CBDADB28C008F600300831 /* Models */,
 				75CBDAD828C0069D00300831 /* Services */,
 				75CBDACA28C005D200300831 /* StocksAppSwiftUIApp.swift */,
@@ -87,6 +92,15 @@
 				75CBDADC28C0090D00300831 /* Stock.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		75CBDADE28C0126700300831 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				75CBDADF28C0129500300831 /* StockListViewModel.swift */,
+				75CBDAE128C012AD00300831 /* StockViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +176,9 @@
 				75CBDACD28C005D200300831 /* ContentView.swift in Sources */,
 				75CBDACB28C005D200300831 /* StocksAppSwiftUIApp.swift in Sources */,
 				75CBDADD28C0090D00300831 /* Stock.swift in Sources */,
+				75CBDAE228C012AD00300831 /* StockViewModel.swift in Sources */,
 				75CBDADA28C006CD00300831 /* Webservice.swift in Sources */,
+				75CBDAE028C0129500300831 /* StockListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
