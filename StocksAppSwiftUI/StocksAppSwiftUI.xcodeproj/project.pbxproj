@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7502AE5228C13A5C0093288D /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7502AE5128C13A5C0093288D /* SearchView.swift */; };
 		75CBDACB28C005D200300831 /* StocksAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBDACA28C005D200300831 /* StocksAppSwiftUIApp.swift */; };
 		75CBDACD28C005D200300831 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBDACC28C005D200300831 /* ContentView.swift */; };
 		75CBDACF28C005D500300831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CBDACE28C005D500300831 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7502AE5128C13A5C0093288D /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		75CBDAC728C005D200300831 /* StocksAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CBDACA28C005D200300831 /* StocksAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		75CBDACC28C005D200300831 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -40,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7502AE5028C13A3F0093288D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7502AE5128C13A5C0093288D /* SearchView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		75CBDABE28C005D200300831 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +69,7 @@
 		75CBDAC928C005D200300831 /* StocksAppSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				7502AE5028C13A3F0093288D /* Views */,
 				75CBDADE28C0126700300831 /* ViewModels */,
 				75CBDADB28C008F600300831 /* Models */,
 				75CBDAD828C0069D00300831 /* Services */,
@@ -176,6 +187,7 @@
 				75CBDACD28C005D200300831 /* ContentView.swift in Sources */,
 				75CBDACB28C005D200300831 /* StocksAppSwiftUIApp.swift in Sources */,
 				75CBDADD28C0090D00300831 /* Stock.swift in Sources */,
+				7502AE5228C13A5C0093288D /* SearchView.swift in Sources */,
 				75CBDAE228C012AD00300831 /* StockViewModel.swift in Sources */,
 				75CBDADA28C006CD00300831 /* Webservice.swift in Sources */,
 				75CBDAE028C0129500300831 /* StockListViewModel.swift in Sources */,
