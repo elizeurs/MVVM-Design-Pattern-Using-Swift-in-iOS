@@ -21,7 +21,10 @@ struct ContentView: View {
   }
   
     var body: some View {
-      NavigationView {
+      
+      let filteredStocks = self.stockListVM.searchTerm.isEmpty ? self.stockListVM.stocks : self.stockListVM.stocks.filter { $0.symbol.starts(with: self.stockListVM.searchTerm )}
+      
+      return NavigationView {
         
         ZStack(alignment: .leading) {
           
@@ -37,7 +40,7 @@ struct ContentView: View {
           SearchView(searchTerm: self.$stockListVM.searchTerm)
             .offset(y: -250)
           
-          StockListView(stocks: self.stockListVM.stocks)
+          StockListView(stocks: filteredStocks)
             .offset(y: 150)
         }
         
