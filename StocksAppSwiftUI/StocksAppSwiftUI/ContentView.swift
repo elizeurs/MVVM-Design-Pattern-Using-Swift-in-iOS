@@ -41,7 +41,11 @@ struct ContentView: View {
             .offset(y: -250)
           
           StockListView(stocks: filteredStocks)
-            .offset(y: 150)
+            .offset(y: 200)
+            
+          
+          NewsArticleView(newsArticles: self.stockListVM.news)
+            .offset(y: 500)
         }
         
         .navigationBarTitle("Stocks")
@@ -54,6 +58,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+      ContentView()
+        
     }
 }

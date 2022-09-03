@@ -11,6 +11,7 @@
 		7502AE5428C15DF80093288D /* StockListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7502AE5328C15DF80093288D /* StockListView.swift */; };
 		755B8E1028C26356007E45E2 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B8E0F28C26356007E45E2 /* Article.swift */; };
 		755B8E1228C2936B007E45E2 /* NewsArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B8E1128C2936B007E45E2 /* NewsArticleViewModel.swift */; };
+		755B8E1428C29A7E007E45E2 /* NewsArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B8E1328C29A7E007E45E2 /* NewsArticleView.swift */; };
 		75CBDACB28C005D200300831 /* StocksAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBDACA28C005D200300831 /* StocksAppSwiftUIApp.swift */; };
 		75CBDACD28C005D200300831 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBDACC28C005D200300831 /* ContentView.swift */; };
 		75CBDACF28C005D500300831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CBDACE28C005D500300831 /* Assets.xcassets */; };
@@ -26,6 +27,8 @@
 		7502AE5328C15DF80093288D /* StockListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListView.swift; sourceTree = "<group>"; };
 		755B8E0F28C26356007E45E2 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		755B8E1128C2936B007E45E2 /* NewsArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleViewModel.swift; sourceTree = "<group>"; };
+		755B8E1328C29A7E007E45E2 /* NewsArticleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsArticleView.swift; sourceTree = "<group>"; };
+		755B8E1528C29E67007E45E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		75CBDAC728C005D200300831 /* StocksAppSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksAppSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CBDACA28C005D200300831 /* StocksAppSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksAppSwiftUIApp.swift; sourceTree = "<group>"; };
 		75CBDACC28C005D200300831 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 			children = (
 				7502AE5128C13A5C0093288D /* SearchView.swift */,
 				7502AE5328C15DF80093288D /* StockListView.swift */,
+				755B8E1328C29A7E007E45E2 /* NewsArticleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -76,6 +80,7 @@
 		75CBDAC928C005D200300831 /* StocksAppSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				755B8E1528C29E67007E45E2 /* Info.plist */,
 				7502AE5028C13A3F0093288D /* Views */,
 				75CBDADE28C0126700300831 /* ViewModels */,
 				75CBDADB28C008F600300831 /* Models */,
@@ -200,6 +205,7 @@
 				755B8E1228C2936B007E45E2 /* NewsArticleViewModel.swift in Sources */,
 				75CBDADD28C0090D00300831 /* Stock.swift in Sources */,
 				7502AE5228C13A5C0093288D /* SearchView.swift in Sources */,
+				755B8E1428C29A7E007E45E2 /* NewsArticleView.swift in Sources */,
 				75CBDAE228C012AD00300831 /* StockViewModel.swift in Sources */,
 				75CBDADA28C006CD00300831 /* Webservice.swift in Sources */,
 				75CBDAE028C0129500300831 /* StockListViewModel.swift in Sources */,
@@ -336,6 +342,7 @@
 				DEVELOPMENT_TEAM = VM55LWG8PP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StocksAppSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -365,6 +372,7 @@
 				DEVELOPMENT_TEAM = VM55LWG8PP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StocksAppSwiftUI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

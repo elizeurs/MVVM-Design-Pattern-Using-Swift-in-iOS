@@ -11,7 +11,7 @@ class Webservice {
   
   func getTopNews(completion: @escaping (([Article]?) -> Void)) {
     
-    guard let url = URL(string: "https://island-bramble.glitch.me/stocks") else {
+    guard let url = URL(string: "https://island-bramble.glitch.me/top-news") else {
       fatalError("Url is not correct")
     }
     
@@ -35,7 +35,7 @@ class Webservice {
   
   func getStocks(completion: @escaping (([Stock]?) -> Void)) {
     
-    guard let url = URL(string: "https://island-bramble.glitch.me/top-news") else {
+    guard let url = URL(string: "https://island-bramble.glitch.me/stocks") else {
       fatalError("Url is not correct")
     }
     

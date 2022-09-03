@@ -8,7 +8,7 @@
 import Foundation
 
 struct Article: Decodable {
-  let title: String
-  let imageURL: String
-  let publication: String
+  let title: String?
+  let imageURL: String?
+  let publication: String?
 }
