@@ -10,6 +10,8 @@ import SwiftUI
 struct NewsArticleView: View {
   
   let newsArticles: [NewsArticleViewModel]
+//  let onDragBegin: (DragGesture.Value) -> Void
+//  let onDragEnd: (DragGesture.Value) -> Void
   
   var body: some View {
     
@@ -23,6 +25,9 @@ struct NewsArticleView: View {
           .font(.largeTitle)
           .fontWeight(.bold)
           .padding(2)
+//          .gesture(DragGesture()
+//                    .onChanged(self.onDragBegin)
+//                    .onEnded(self.onDragEnd))
         
         Text("From News")
           .foregroundColor(Color.gray)
@@ -64,6 +69,8 @@ struct NewsArticleView_Previews: PreviewProvider {
     
     let article = Article(title: "New Title", imageURL: "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f2c667737950e6bf2338de1%2F0x0.jpg", publication: "The WallStreet Journal")
     
-    return NewsArticleView(newsArticles: [NewsArticleViewModel(article: article)])
+    return NewsArticleView(newsArticles: [NewsArticleViewModel(article: article)]
+//                           ,onDragBegin: { _ in }, onDragEnd: { _ in }
+    )
   }
 }
