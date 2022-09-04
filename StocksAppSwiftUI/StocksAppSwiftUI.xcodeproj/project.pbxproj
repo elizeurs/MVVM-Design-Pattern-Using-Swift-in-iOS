@@ -12,6 +12,7 @@
 		755B8E1028C26356007E45E2 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B8E0F28C26356007E45E2 /* Article.swift */; };
 		755B8E1228C2936B007E45E2 /* NewsArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B8E1128C2936B007E45E2 /* NewsArticleViewModel.swift */; };
 		755B8E1428C29A7E007E45E2 /* NewsArticleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755B8E1328C29A7E007E45E2 /* NewsArticleView.swift */; };
+		75BEC1F328C53CAF00E11A3D /* URLImage in Frameworks */ = {isa = PBXBuildFile; productRef = 75BEC1F228C53CAF00E11A3D /* URLImage */; };
 		75CBDACB28C005D200300831 /* StocksAppSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBDACA28C005D200300831 /* StocksAppSwiftUIApp.swift */; };
 		75CBDACD28C005D200300831 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CBDACC28C005D200300831 /* ContentView.swift */; };
 		75CBDACF28C005D500300831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CBDACE28C005D500300831 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75BEC1F328C53CAF00E11A3D /* URLImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +146,9 @@
 			dependencies = (
 			);
 			name = StocksAppSwiftUI;
+			packageProductDependencies = (
+				75BEC1F228C53CAF00E11A3D /* URLImage */,
+			);
 			productName = StocksAppSwiftUI;
 			productReference = 75CBDAC728C005D200300831 /* StocksAppSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -172,6 +177,9 @@
 				Base,
 			);
 			mainGroup = 75CBDABE28C005D200300831;
+			packageReferences = (
+				75BEC1F128C53CAF00E11A3D /* XCRemoteSwiftPackageReference "url-image" */,
+			);
 			productRefGroup = 75CBDAC828C005D200300831 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -413,6 +421,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75BEC1F128C53CAF00E11A3D /* XCRemoteSwiftPackageReference "url-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dmytro-anokhin/url-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75BEC1F228C53CAF00E11A3D /* URLImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75BEC1F128C53CAF00E11A3D /* XCRemoteSwiftPackageReference "url-image" */;
+			productName = URLImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 75CBDABF28C005D200300831 /* Project object */;
 }
