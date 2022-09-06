@@ -14,6 +14,7 @@
 		753E017028C6B34F00E856B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 753E016F28C6B34F00E856B3 /* Assets.xcassets */; };
 		753E017328C6B34F00E856B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 753E017128C6B34F00E856B3 /* LaunchScreen.storyboard */; };
 		753E018128C6B3A600E856B3 /* CalculatorAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 753E018028C6B3A600E856B3 /* CalculatorAppTests.swift */; };
+		7560C39528C7A8CE00BC0E0E /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7560C39428C7A8CD00BC0E0E /* Calculator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		753E017428C6B34F00E856B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		753E017E28C6B3A500E856B3 /* CalculatorAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		753E018028C6B3A600E856B3 /* CalculatorAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorAppTests.swift; sourceTree = "<group>"; };
+		7560C39428C7A8CD00BC0E0E /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				753E016F28C6B34F00E856B3 /* Assets.xcassets */,
 				753E017128C6B34F00E856B3 /* LaunchScreen.storyboard */,
 				753E017428C6B34F00E856B3 /* Info.plist */,
+				7560C39428C7A8CD00BC0E0E /* Calculator.swift */,
 			);
 			path = CalculatorApp;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				753E016B28C6B34D00E856B3 /* ViewController.swift in Sources */,
+				7560C39528C7A8CE00BC0E0E /* Calculator.swift in Sources */,
 				753E016728C6B34D00E856B3 /* AppDelegate.swift in Sources */,
 				753E016928C6B34D00E856B3 /* SceneDelegate.swift in Sources */,
 			);
