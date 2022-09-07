@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7560C3A428C7F5C600BC0E0E /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7560C3A328C7F5C600BC0E0E /* SettingsViewModelTests.swift */; };
+		75F24F3A28C91A8400E3D89E /* WeatherListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F24F3928C91A8300E3D89E /* WeatherListViewModelTests.swift */; };
 		8D1307A421B31A15000DFB56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1307A321B31A15000DFB56 /* AppDelegate.swift */; };
 		8D1307A921B31A15000DFB56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D1307A721B31A15000DFB56 /* Main.storyboard */; };
 		8D1307AB21B31A16000DFB56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D1307AA21B31A16000DFB56 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		7560C39A28C7EB2F00BC0E0E /* GoodWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7560C3A328C7F5C600BC0E0E /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
+		75F24F3928C91A8300E3D89E /* WeatherListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModelTests.swift; sourceTree = "<group>"; };
 		8D1307A021B31A15000DFB56 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D1307A321B31A15000DFB56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D1307A821B31A15000DFB56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				7560C3A328C7F5C600BC0E0E /* SettingsViewModelTests.swift */,
+				75F24F3928C91A8300E3D89E /* WeatherListViewModelTests.swift */,
 			);
 			path = GoodWeatherTests;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7560C3A428C7F5C600BC0E0E /* SettingsViewModelTests.swift in Sources */,
+				75F24F3A28C91A8400E3D89E /* WeatherListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
